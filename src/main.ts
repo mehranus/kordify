@@ -12,6 +12,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe())
   config({path:join(process.cwd(),'.env')})
   swagerConfigInit(app)
+  
   const {PORT}=process.env
   await app.listen(PORT,()=>{
     console.log(`http://localhost:${PORT}`);
