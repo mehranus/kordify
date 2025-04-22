@@ -3,5 +3,6 @@ export enum EntityName{
   Artist='artist',
   Album='album',
   Music='music',
+  Images="images"
  
 }
